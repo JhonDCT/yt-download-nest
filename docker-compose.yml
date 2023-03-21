@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  blob-server:
+    build: Dockerfile
+    container_name: blob-server
+    ports:
+      - 3003:3000
+    volumes:
+      - /srv/media:/mnt/media
